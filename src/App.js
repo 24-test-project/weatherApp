@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      <div>App</div>
+      <div>Appdd</div>
     </>
   );
 }

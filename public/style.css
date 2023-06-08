@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./img/bg.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+/* header */
+
+header {
+  margin: 3rem;
+}
+
+/* header ****************** */
+
+/* login-page ************** */
+#login-page {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff9a;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.login-title {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input {
+  border-radius: 1rem;
+  border: none;
+  height: 3.5rem;
+}
+
+.login-pw {
+  margin-bottom: 2rem;
+}
+
+.login-btn {
+  border-radius: 1rem;
+  border: none;
+  background-color: #65f89d;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.qus-user-not {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.qus-user-not .user-sign {
+  text-decoration: none;
+  color: #65f89d;
+  font-weight: bold;
+}
+
+/* signup-page */
+#signup-page {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff9a;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.signup-title {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+#password {
+  margin-bottom: 2rem;
+}
+
+.signup-btn {
+  border-radius: 1rem;
+  border: none;
+  background-color: #65f89d;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
