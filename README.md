@@ -34,8 +34,10 @@
 > - **컨벤션** 지키기
 
 ### 📌참고사항 
-> - 완성 파일 링크 : https://drive.google.com/file/d/1dChERLkc9AuBUPmX39B-xdKVeAvoQDjB/view?usp=sharing
-> - 다운로드 후 npm install로 모듈을 받아주세요 (날씨 기능을 실행하려면 API_KEY가 필요해요.)
+> - 완성 파일 링크 : https://github.com/24-test-project/wetherapp-completed
+> - 설명 주석을 추가하였습니다. 구현 어렵거나 모르시는 부분 있으면 일단 여기서 참고해주세요.
+> - 날씨 기능을 실행하려면 API_KEY가 필요해요.
+> - ❗ API_KEY가 없으면 로그인 후 날씨 페이지 이동시 에러가 발생합니다.
 > - 프로젝트 초기 세팅이 되어있어요. 각자 브랜치로 가셔서 npm install로 모듈을 받아주세요.
 
 > - 회원가입 유효성검사 정규표현식
