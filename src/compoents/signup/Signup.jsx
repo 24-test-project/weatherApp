@@ -28,6 +28,23 @@ export default function Signup() {
       }
     }
 
+    // 닉네임 형식 검사
+    const nicknameRegex = /^[a-zA-Z0-9가-힣](4,10)$/;
+    if (!nicknameRegex.test(nickname)) {
+      setError("닉네임은 4-10자 영문, 숫자, 한글로 제한됩니다.");
+      return;
+    }
+
+    // 비밀번호 형식 검사
+    const passwordRegex =
+      /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,16}$/;
+    if (!passwordRegex.test(password)) {
+      setError(
+        "비밀번호는 8-16자 영문, 숫자, 특수문자(@$!%*#?&)의 조합으로 제한됩니다.",
+      );
+      return;
+    }
+
     console.log(nickname, email, password);
     const userData = {
       nickname,
