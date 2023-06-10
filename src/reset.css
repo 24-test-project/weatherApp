@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../public//img/bg.jpg");
+  background-repeat: none;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}

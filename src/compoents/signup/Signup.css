@@ -1,0 +1,30 @@
+#signup-page {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff9a;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.signup-title {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+#password {
+  margin-bottom: 2rem;
+}
+
+.signup-btn {
+  border-radius: 1rem;
+  border: none;
+  background-color: #65f89d;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
