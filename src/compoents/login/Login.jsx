@@ -1,10 +1,11 @@
 import React from "react";
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isLoggenIn, setIsLoggedIn] = useState(false);
 
   const hLogin = () => {
     // LocalStorage에서 회원 데이터 가져오기
@@ -19,10 +20,13 @@ export default function Login() {
         console.log("로그인 성공");
         // 추가 동작 수행 또는 페이지 이동 중
         //  ...
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        // 로그인 상태 업데이트
+        setIsLoggedIn(true);
         // 상태 초기화
-        setEmail("");
-        setPassword("");
-        setError("");
+        // setEmail("");
+        // setPassword("");
+        // setError("");
       } else {
         // 로그인 실패 - 이메일 또는 비밀번호가 일치하지 않음
         setError("이메일 또는 비밀번호가 올바르지 않습니다.");
@@ -32,6 +36,22 @@ export default function Login() {
       setError("회원 데이터가 존재하지 않습니다.");
     }
   };
+
+  const handleLogout = () => {
+    // 로그아웃 시 로그인 상태 업데이트 및 LocalStorage에서 회원 정보 삭제
+    setIsLoggedIn(false);
+    localStorage.removeItem("currentUser");
+  };
+
+  if (isLoggedIn) {
+    // 로그인 완료 페이지로 이동
+    return (
+      <div>
+        <h2>로그인 완료</h2>
+        <button onClick={handleLogout}>로그아웃</button>
+      </div>
+    );
+  }
 
   return (
     <section id="login-page">
