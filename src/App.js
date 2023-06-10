@@ -3,10 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./compoents/login/Login.jsx";
 import Signup from "./compoents/signup/Signup.jsx";
 import Weather from "./compoents/weather/Weather.jsx";
+// import { useState } from "react";
 
 export default function App() {
   return (
-    <>
+    <div id="root">
       <GlobalStyles />
       <BrowserRouter>
         <Routes>
@@ -16,6 +17,6 @@ export default function App() {
           <Route path="Weather" element={<Weather />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }

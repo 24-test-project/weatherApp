@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <header id="header">
+      <h1 id="header-title">24 WeatherApp</h1>
+    </header>
+  );
 }

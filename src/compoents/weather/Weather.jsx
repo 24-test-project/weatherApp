@@ -5,5 +5,5 @@ import React from "react";
 // .gitignore 파일에서 env파일의 주석을 해제하여 적용되도록 해주세요.
 // 발급 후 조금 시간이 지나면 API_KEY가 활성화 됩니다.
 export default function Weather() {
-  return <div>Weather</div>;
+  return <div>유저정보 유저닉넴 유저비번</div>;
 }
